@@ -1,2 +1,104 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/b60f235d15.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Marina's Weather App 😎</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css">
+
+  </head>
+  <body>
+
+       <div class="container">
+      <div class="card m-4 border border-4 rounded">
+        <div class="card-body mx-4">
+          <div class="row my-4">
+            <div class="col-8">
+              <div class="input-group">
+           
+              </div>
+            </div>
+          </div>
+    <div class="container"></div>
+      <div class="row">
+        <div class="col">Dublin</div>
+        <div class="col">Lisbon</div>
+        <div class="col">Paris</div>
+        <div class="col">Lagos</div>
+        <div class="col">Orlando</div>
+      </div>
+      <br>
+       <form class="search-form" id="search-form">
+      <input type="text" placeholder="🔎 Enter city here..." id = "city-input" autocomplete="off" autofocus = "on"/>
+      <input type="button" value="Search"/>
+      <input type="button" value="Current location"/>
+    </form>
+    <br>
+    <div class="float-left">
+      <span class = "currentTemperature" id="currentTemperature"></span
+        ><span class = "units"> 
+            <a href="#" id="celcius-link">ºC</a> |
+            <a href="#" id="fahrenheit-link">ºF</a>
+          </span>
+      
+    
+    <div class="city" id="city"></div>
+    <div class="date-time" id = "date"></div>
+  
+    <ul>
+    <li id = "description">Partly Cloudy</li>
+    <li>Humidity: <span id="humidity"></span>%</li>
+    <li>Wind: <span id="wind"></span>km/h</li>
+    </ul>
+    
+    
+    <br>
+    </div>
+
+    <div class="row text-center forecast">
+                <div class="col-2">
+                    <i class="fas fa-wind"></i>
+                  <p class="day">Monday</p>
+                  <p class="temperature">22º/<strong>34º</strong></p>
+                </div>
+                <div class="col-2">
+                     <i class="fas fa-cloud-showers-heavy"></i>
+                  <p class="day">Tuesday</p>
+                  <p class="temperature">24º/<strong>30º</strong></p>
+                </div>
+                <div class="col-2">
+                   <i class="fas fa-cloud-sun-rain"></i>
+                  <p class="day">Wednesday</p>
+                  <p class="temperature">23º/<strong>28º</strong></p>
+                </div>
+                <div class="col-2">
+                  <i class="fas fa-cloud-sun"></i>
+                  <p class="day">Thursday</p>
+                  <p class="temperature">24º/<strong>29º</strong></p>
+                </div>
+                <div class="col-2">
+                    <i class="fas fa-sun"></i>
+                  <p class="day">Friday</p>
+                  <p class="temperature">27º/<strong>34º</strong></p>
+                </div>
+                <div class="col-2">
+                 <i class="fas fa-sun"></i>
+                  <p class="day">Saturday</p>
+                  <p class="temperature">24º/<strong>34º</strong></p>
+
+
+    </div>
+    
+    <script src="src/index.js"></script>
+  </body>
+</html>
+
